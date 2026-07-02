@@ -125,7 +125,7 @@ describe('callPerplexityChat – buffer and linkify', () => {
     expect(streamer.append).toHaveBeenCalledTimes(1);
     const emittedText = streamer._appended[0];
     expect(emittedText).toBe(
-      'See [[1]](https://first.example.com) and [[2]](https://second.example.com) for details.',
+      'See <https://first.example.com|[1]> and <https://second.example.com|[2]> for details.',
     );
   });
 

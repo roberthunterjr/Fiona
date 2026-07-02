@@ -103,7 +103,7 @@ streamed response.
 2. As Perplexity streams its response, citation URLs are collected, normalized,
    deduplicated, and assigned stable 1-based indices.
 3. Each `[n]` marker in the streamed text is replaced in real time with a Slack
-   mrkdwn hyperlink: `[[n]](url)`.
+   mrkdwn hyperlink: `<url|[n]>`.
 
 No separate "Sources" block is appended to the message; citations appear only
 as inline links within the answer text.
