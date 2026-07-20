@@ -339,7 +339,7 @@ function linkifyCitationMarkers(text, sourceIndexMap = {}) {
       return full;
     }
 
-    return `[[${index}]](${url})`;
+    return `<${url}|[${index}]>`;
   });
 }
 
